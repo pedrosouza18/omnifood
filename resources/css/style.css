@@ -14,3 +14,9 @@ html {
     /* text-rendering: optimizeLegibility make our font rendering in a perfect way  */
     text-rendering: optimizeLegibility;
 }
+
+.row {
+    /* Determinating max-width for stay fixed */
+    max-width: 1140px;
+    margin: 0 auto;
+}
