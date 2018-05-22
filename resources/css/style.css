@@ -1,4 +1,8 @@
 /* Set the default params of the all website */
+
+/* ---------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -15,31 +19,18 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+/* ---------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ---------------------------------------- */
 .row {
     /* Determinating max-width for stay fixed */
     max-width: 1140px;
     margin: 0 auto;
 }
 
-/* HEADER */
-header {
-    /* In this case, I put the linear-gradient of the black to black for the image to stay dark */
-    /* I used two techniques using  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url('../css/img/hero.jpg')*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url('../css/img/hero.jpg');
-    /* background-size: cover; to serve for the image to fill of the correct way */
-    background-size: cover;
-    background-position: center;
-    /* height: 100vh; to do te image to fill the full viewport */
-    height: 100vh;
-}
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
+/* ---------------------------------------- */
+/* HEADINGS */
+/* ---------------------------------------- */
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -53,7 +44,9 @@ h1 {
     word-spacing: 4px;
 }
 
-/* Buttons */
+/* ---------------------------------------- */
+/* BUTTONS */
+/* ---------------------------------------- */
 /* the pseudo-classes link and visited are for when someone still not visited and visited*/
 /* They are as initial states */
 .btn:link,
@@ -89,4 +82,57 @@ h1 {
 .btn-ghost:active {
     border: 1px solid #cf6d17;
     color: #fff;
+}
+
+/* ---------------------------------------- */
+/* HEADER */
+/* ---------------------------------------- */
+header {
+    /* In this case, I put the linear-gradient of the black to black for the image to stay dark */
+    /* I used two techniques using  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url('../css/img/hero.jpg')*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url('../css/img/hero.jpg');
+    /* background-size: cover; to serve for the image to fill of the correct way */
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; to do te image to fill the full viewport */
+    height: 100vh;
+}
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    /* I used the border transparent to use transition when I use the hover */
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
 }
