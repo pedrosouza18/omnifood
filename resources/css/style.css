@@ -12,7 +12,8 @@
     outline: none;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato','Arial',sans-serif;
@@ -20,6 +21,7 @@ html {
     font-weight: 300;
     /* text-rendering: optimizeLegibility make our font rendering in a perfect way  */
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {
